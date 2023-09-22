@@ -1,6 +1,6 @@
-const {Booking}=require('../models/index');
-const {StatusCodes}=require('http-status-codes')
-const {AppError,ValidationError} = require('../utils/errors/index');
+const { Booking }=require('../models/index');
+const { StatusCodes }=require('http-status-codes')
+const { AppError,ValidationError } = require('../utils/errors/index');
 
 class BookingRepository{
     async create(data){
@@ -20,7 +20,5 @@ class BookingRepository{
            
         }
     }
-
-    
 }
 module.exports=BookingRepository
